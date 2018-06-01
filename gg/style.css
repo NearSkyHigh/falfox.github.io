@@ -1,9 +1,14 @@
+body {
+    margin: 0;
+}
+
 #content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 150px);
-    grid-row-gap: 40px;
-    margin: 0 70px;
+    grid-template-rows: repeat(10, 150px);
+    padding: 0 70px;
+    position: relative;
+    z-index: 2;
 }
 
 .logo {
@@ -40,10 +45,20 @@
 }
 
 .heading button {
-    font-family: 'Josefin Sans', sans-serif;
-    background: none;
-    border: 2px solid blues;
+    font-family: 'Josefin Sans', sans-serif;    
     padding: 15px;
+    font-weight: 600;
+    border: 1px solid #9c27b0;
+    background-color: aqua;
+    background-image: -webkit-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #2196f3, #9c27b0, #fff); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
 }
 
 .bg-thumbnail {
@@ -65,7 +80,6 @@
     display: grid;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    background: black;
 }
 
 .advantage i:nth-child(1n){
@@ -94,3 +108,103 @@
 .advantage i.material-icons {
     font-size: 72px;
 }
+
+.back {
+    display: grid;
+    width: 100%; 
+    position: absolute;
+    height: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 400px;
+    z-index: 1;
+}
+
+.back div:nth-child(1) {
+    transform: skewY(25deg);
+    background: #2A8EEE;
+    grid-row: 2 / 2;
+}
+.back div:nth-child(2) {
+    transform: skewY(-25deg);
+    background: #605CD0;
+    grid-row: 2 / 2;
+}
+.back div:nth-child(3) {
+    transform: skewY(25deg);
+    background: #972BB3;
+    grid-row: 2 / 2;
+}
+
+.campaigns {
+    grid-column: span 12;
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+}
+
+.campaigns h3 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.campaigns .card {
+    grid-column: span 1;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 70px 240px 50px 100px;
+}
+
+.campaigns .card h4 {
+    align-self: center;
+    padding: 10px;
+}
+
+.campaigns .card .reward {
+    background: darkgrey;
+}
+
+.campaigns .card .avatar {
+    align-self: center;
+    padding: 10px;
+}
+
+.campaigns .card .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.campaigns .card .info div {
+    grid-column: span 1;
+    background: #EDEDED;
+    text-align: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50px 1fr;
+}
+
+.campaigns .card .info div i {
+    font-size: 28px;
+    grid-column: span 1;
+    align-self: center;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.campaigns .card .info div span:nth-child(2)  {
+    font-size: 16px;
+    grid-column: span 1;
+    align-self: center;
+    text-align: left
+}
+
+.campaigns .card .info div span:nth-child(3) {
+    font-size: 24px;
+    grid-column: span 2;
+}
+
+
+
+
+
