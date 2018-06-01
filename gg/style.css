@@ -48,7 +48,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;    
     padding: 15px;
     font-weight: 600;
-    border: 1px solid #9c27b0;
+    border: 3px solid #9c27b0;
     background-color: aqua;
     background-image: -webkit-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For Chrome and Safari */
     background-image:    -moz-linear-gradient(left, #2196f3, #9c27b0, #fff); /* For old Fx (3.6 to 15) */
@@ -150,23 +150,28 @@ body {
 
 .campaigns .card {
     grid-column: span 1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-rows: 70px 240px 50px 100px;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .campaigns .card h4 {
     align-self: center;
-    padding: 10px;
+    padding: 16px;
 }
 
 .campaigns .card .reward {
-    background: darkgrey;
+    background: ;
+    width: 100%;
+    background: darkgrey url('https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUivB9aSQPRVees2c6cQ0hwIgFot6imKglh7PHJcjZ94N2kk4XFxvOia-6Glz5TupIpiOiQ9N_w3Qfs-hFrZWr3INDGJAQ-Z1jV-Fi2wvCv28HWthLbgw/360fx360f') center center no-repeat;;
+    background-size: cover;
 }
 
 .campaigns .card .avatar {
     align-self: center;
-    padding: 10px;
+    padding: 16px;
 }
 
 .campaigns .card .info {
