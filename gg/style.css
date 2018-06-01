@@ -1,0 +1,96 @@
+#content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 150px);
+    grid-row-gap: 40px;
+    margin: 0 70px;
+}
+
+.logo {
+    grid-area: 1 / 1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+}
+
+.navigation {
+    grid-area: 1 / 7 / 1 / 12;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-self: end;
+    align-self: center;
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+
+.heading {
+    grid-area:  2 / 1 / 5 / 6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading button {
+    font-family: 'Josefin Sans', sans-serif;
+    background: none;
+    border: 2px solid blues;
+    padding: 15px;
+}
+
+.bg-thumbnail {
+    grid-area: 2 / 7 / 4 / 12;
+    border: 3px solid black;
+}
+
+.advantage {
+    grid-column: span 12;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.advantage div {
+    grid-column: span 4;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 50px 50px;
+    display: grid;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background: black;
+}
+
+.advantage i:nth-child(1n){
+    grid-column: span 1;
+    grid-row: span 2;
+    display: inline;
+    align-self: center;
+    justify-self: center;
+} 
+
+.advantage span:nth-child(2){
+    grid-column: 2 / span 1;
+    grid-row: span 1;
+    font-size: 32px;
+    align-self: end;
+}
+
+.advantage span:nth-child(3){
+    grid-column: 2 / span 1;
+    grid-row: 2  / 2;
+    font-size: 18px;
+    align-self: center;
+    font-weight: 200;
+} 
+
+.advantage i.material-icons {
+    font-size: 72px;
+}
