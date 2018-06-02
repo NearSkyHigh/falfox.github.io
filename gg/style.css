@@ -246,8 +246,21 @@ body {
 .signin-box {
     grid-row: span 4;
     grid-column: 4 / 10;
-    padding: 70px;
+    padding: 50px 70px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.signin-box a {
+    color: #2196f3;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.signin-box .signup_link {
+    font-size: 14px;
+    display: block;
+    padding: 10px;
 }
 
 .signin-box span.signin_span { 
@@ -262,14 +275,58 @@ body {
     padding: 10px 0;
 }
 
-.signin-box input {
+.signin-box input[type="text"] {
     border: 1px solid lightgrey;
     width: 95%;
     height: 30px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;   
+}
+
+.signin-box .checkbox {
+    display: block;
+}
+
+.signin-box .checkbox input{
+    display: none;
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+  
+.signin-box .checkbox label {
+    position: relative;
+    cursor: pointer;
+}
+  
+.signin-box .checkbox label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+  
+.signin-box .checkbox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+    width: 4px;
+    height: 10px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .signin-box .terms {
@@ -285,7 +342,7 @@ body {
     border-image: linear-gradient(to right, #2196f3 , #9c27b0);
     border-image-slice: 1;
     cursor: pointer;
-    margin: 30px 0;
+    margin: 30px 0 15px 0;
 }
 
 .signin-box button.signin_btn div {
