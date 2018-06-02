@@ -9,6 +9,7 @@ body {
     padding: 0 70px;
     position: relative;
     z-index: 2;
+    background: url('background.svg') no-repeat;
 }
 
 .logo {
@@ -136,6 +137,7 @@ body {
 }
 
 .campaigns {
+    margin-top: 60px;
     grid-column: span 12;
     font-family: 'Josefin Sans', sans-serif;
     display: grid;
@@ -143,7 +145,7 @@ body {
     grid-column-gap: 40px;
 }
 
-.campaigns h3 {
+.campaigns h2 {
     grid-column: span 3;
     justify-self: center;
 }
@@ -163,7 +165,6 @@ body {
 }
 
 .campaigns .card .reward {
-    background: ;
     width: 100%;
     background: darkgrey url('https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUivB9aSQPRVees2c6cQ0hwIgFot6imKglh7PHJcjZ94N2kk4XFxvOia-6Glz5TupIpiOiQ9N_w3Qfs-hFrZWr3INDGJAQ-Z1jV-Fi2wvCv28HWthLbgw/360fx360f') center center no-repeat;;
     background-size: cover;
