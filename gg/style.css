@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-    grid-area: 1 / 1;
+    grid-column: span 1;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     text-align: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .navigation {
-    grid-area: 1 / 7 / 1 / 12;
+    grid-column: span 11;
     font-family: 'Josefin Sans', sans-serif;
     justify-self: end;
     align-self: center;
@@ -41,7 +41,8 @@ body {
 }
 
 .heading {
-    grid-area:  2 / 1 / 5 / 6;
+    grid-column: span 6;
+    grid-row: span 3;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -63,8 +64,11 @@ body {
 }
 
 .bg-thumbnail {
-    grid-area: 2 / 7 / 4 / 12;
-    border: 3px solid black;
+    grid-row: span 3;
+    grid-column: span 6;
+    /* border: 3px solid black; */
+    align-self: start;
+
 }
 
 .advantage {
@@ -152,7 +156,6 @@ body {
 
 .campaigns .card {
     grid-column: span 1;
-    /* border: 1px solid black; */
     display: grid;
     grid-template-rows: 70px 240px 50px 100px;
     background: white;
@@ -173,6 +176,25 @@ body {
 .campaigns .card .avatar {
     align-self: center;
     padding: 16px;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+}
+
+.campaigns .card .avatar span:nth-child(1) {
+    display: inline-block;
+    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    justify-self: start;
+}
+
+.campaigns .card .avatar span:nth-child(2) {
+    display: inline;
+    text-align: left;
+    align-self: center;
 }
 
 .campaigns .card .info {
